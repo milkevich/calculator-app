@@ -1,0 +1,82 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body {
+  background-color: rgb(35, 35, 35);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.calc-wrapper {
+  box-shadow: rgba(255, 255, 255, 0.136) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.18) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 10px;
+  max-width: 300px;
+  background-color: rgb(20, 20, 20);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+
+}
+
+.display {
+  padding: 16px;
+  text-align: right;
+  background-color:rgb(25, 25, 25);
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 300;
+  border-radius: 10px 10px 0px 0px;
+  overflow-x: hidden;
+}
+
+.display span {
+  color: rgb(121, 121, 121);
+  font-size: 14px;
+}
+
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding: 20px;
+  cursor: pointer;
+  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.operators {
+  display: flex;
+}
+
+.operators button {
+  flex: 1 1 0%;
+  background: -webkit-linear-gradient(rgb(166, 0, 255), rgb(255, 0, 255));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.digits {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.digits button {
+  flex: 1 1 33.333%;
+  max-width: 33.333%;
+}
+
+.result {
+  background: -webkit-linear-gradient(rgb(166, 0, 255), rgb(255, 0, 255));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
